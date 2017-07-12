@@ -14,7 +14,7 @@ resources:
 - name: source
   type: git
   source:
-    uri: ((git-server-base))/((git-username))/((resource-name))
+    uri: ((git-server-base))/((git-username))/((image-name))
     branch: ((git-branch))
 
 - name: image
@@ -23,4 +23,4 @@ resources:
     email: ((docker-hub-email))
     username: ((docker-hub-username))
     password: ((docker-hub-password))
-    repository: ((docker-hub-username))/((resource-name))
+    repository: ((docker-hub-username))/((image-name))
